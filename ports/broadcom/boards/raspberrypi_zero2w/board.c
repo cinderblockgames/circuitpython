@@ -14,7 +14,7 @@
 void board_init(void) {
     videocore_framebuffer_obj_t *fb = &allocate_display_bus()->videocore;
     fb->base.type = &videocore_framebuffer_type;
-    common_hal_videocore_framebuffer_construct(fb, 640, 480);
+    common_hal_videocore_framebuffer_construct(fb, 1920, 1080);
 
     framebufferio_framebufferdisplay_obj_t *display = &allocate_display()->framebuffer_display;
     display->base.type = &framebufferio_framebufferdisplay_type;
